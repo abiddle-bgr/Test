@@ -52,8 +52,8 @@
      {
          HttpRequestMessageProperty httpRequestProperty = new HttpRequestMessageProperty();
          httpRequestProperty.Headers[HttpRequestHeader.Authorization] = "Basic " +
-             Convert.ToBase64String(Encoding.ASCII.GetBytes("abiddle" + ":" +
-                 "6t2A2b123@123"));
+             Convert.ToBase64String(Encoding.ASCII.GetBytes("USERNAME" + ":" +
+                 "PASSWORD"));
          request.Properties.Add(HttpRequestMessageProperty.Name, httpRequestProperty);
          return null;
      }
